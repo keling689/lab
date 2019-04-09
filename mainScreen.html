@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实验室监控系统</title>
+		<link rel="stylesheet" href="css/resert.css" />
+		<link rel="stylesheet" href="css/mainScreen.css" />
+		<script src='js/jquery.min.js'></script>
+		<script src='js/echarts.min.js'></script>
+		
+	</head>
+	<body>
+		<div class="main-screen">
+			<header>
+				<div class="main-title">
+					<canvas id="myCanvas">
+Your browser does not support the HTML5 canvas tag.</canvas>
+					<div class="main-time">
+						2019-3-16 18:43:03
+					</div>
+				</div>
+			</header>
+			<main>
+				<section>
+					<div class="section-left has-side">
+						<div class="vent-system">
+							<div class="part-top">
+								<img src="" alt="" width="28px" height="28px" style=" background:  url(assets/icon/bicon.png) no-repeat 0px 0px;"/>
+								<span>通风系统</span>
+							</div>
+							<div class="vent-section">
+								<ul>
+									<li id="pie-pic1"></li>
+									<li id="pie-pic2"></li>
+									<li id="pie-pic3"></li>
+								</ul>
+								<ol>
+									<li>
+										<img src="assets/icon/fengshanGif.gif" alt=""/>
+										<p>401试剂仓库</p>
+										<h1>手动控制</h1>
+									</li>
+									<li>
+										<img src="assets/icon/fengshanGif.gif" alt=""/>
+										<p>401试剂仓库</p>
+										<h1>手动控制</h1>
+									</li>
+									<li>
+										<img src="assets/icon/fengshanGif.gif" alt=""/>
+										<p>401试剂仓库</p>
+										<h1>手动控制</h1>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="ups-system">
+							<div class="part-top">
+								<img src="" alt="" width="28px" height="28px" style=" background:  url(assets/icon/bicon.png) no-repeat -48px 0px;"/>
+								<span>UPS系统</span>
+							 </div>
+							<div class="ups-section">
+								<ul>
+									<li class="has-side">
+										<div class="li-top">
+											1#UPS   LC-MS/MS
+										</div>
+										<div class="li-section">
+											<ul>
+												<li>
+													<span>正常</span>
+													<b class="green"></b>
+												</li>
+												<li>
+													<span>电池</span>
+													<b></b>
+												</li>
+												<li>
+													<span>旁路</span>
+													<b></b>
+												</li>
+												<li>
+													<span>故障</span>
+													<b></b>
+												</li>
+											</ul>
+											<ol>
+												<li>
+													<span>负载</span>
+													<div>
+														<ul>
+															<li></li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<span>电压输出</span>
+													<div>219</div>
+												</li>
+												<li>
+													<span>电量</span>
+													<div>
+														<ul>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+														</ul>
+													</div>
+												</li>
+											</ol>
+										</div>
+									</li>
+									<li class="has-side"></li>
+									<li class="has-side"></li>
+									<li class="has-side"></li>
+									<li class="has-side"></li>
+									<li class="has-side"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="section-middle has-side">
+						<div class="gas-system">
+							<div class="part-top">
+								<img src="" alt="" width="28px" height="28px" style=" background:  url(assets/icon/bicon.png) no-repeat -100px 0px;"/>
+								<span>供气系统</span>
+							</div>
+							<div class="gas-section">
+								<div class="gas-left">
+									
+								</div>
+								<div class="gas-right">
+									<div class="gas-right-top">
+										
+									</div>
+									<div class="gas-right-bottom">
+										<div class="right-bottom-left">
+											<img src="assets/icon/fengshanGif.gif" alt=""/>
+											<h1>手动控制</h1>
+										</div>
+										<div class="right-bottom-right">
+											<ul>
+												<li>
+													<p>
+														<img src="" alt="" width="20px" height="20px" style=" background:  url(assets/icon/bicon.png) no-repeat 6px -40px;"/>
+														<span>温度</span>
+													</p>
+													<p>
+														<img src="" alt="" width="20px" height="20px" style=" background:  url(assets/icon/bicon.png) no-repeat -30px -41px;"/>
+														<span>湿度</span>
+													</p>
+												</li>
+												<li>
+													<p>69.0℃</p>
+													<p>68.9%</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wet-system">
+							<div class="part-top">
+								<img src="" alt="" width="28px" height="28px" style=" background:  url(assets/icon/bicon.png) no-repeat -149px 0px;"/>
+								<span>温湿度监控系统</span>
+							</div>
+							<div class="wet-section">
+								<ul>
+									<li class="has-side">
+										<div class="li-top">
+											<img src="" alt="" width="20px" height="20px" style=" background:  url(assets/icon/bicon.png) no-repeat -67px -39px;"/>
+											<span>环境</span>
+										</div>
+										<ol>
+											<li>
+												<div class="top">
+													正常
+												</div>
+												<div class="bottom">
+													8
+												</div>
+											</li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ol>
+									</li>
+									<li class="has-side">
+										<div class="li-top">
+											<img src="" alt="" width="20px" height="20px" style=" background:  url(assets/icon/bicon.png) no-repeat -109px -41px;"/>
+											<span>冰箱</span>
+										</div>
+										<ol>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ol>
+									</li>
+									<li class="has-side">
+										<div class="li-top">
+											
+											<img src="" alt="" width="20px" height="20px" style=" background:  url(assets/icon/bicon.png) no-repeat -149px -40px;"/>
+											<span>培养箱</span>
+										</div>
+										<ol>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ol>
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+					<div class="section-right has-side">
+						<div class="part-top">
+								<img src="" alt="" width="28px" height="28px" style=" background:  url(assets/icon/bicon.png) no-repeat -200px 0px;"/>
+								<span>报警信息</span>
+						</div>
+						<ul class="alarm-msg">
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+							<li>
+								<div> He-1#设备异常，可能有损坏，请及时去现场处理</div>
+								<p>2019-03-14</p>
+							</li>
+						</ul>
+					</div>
+				</section>	
+			</main>
+			
+		</div>
+		<script src='js/mainScreen.js'></script>
+	</body>
+</html>
