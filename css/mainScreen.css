@@ -2,6 +2,10 @@ html {
   height: 100%;
   width: 100%;
 }
+div{
+	margin:0;
+	padding:0;
+}
 
 body {
   height: 100%;
@@ -69,6 +73,7 @@ body {
 .main-screen main section .has-side .side-left-top {
   left: -1px;
   top: -1px;
+
   border-top: 1px solid  #5C7BD9;
   border-left: 1px solid  #5C7BD9;
 }
